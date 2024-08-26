@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECharts Example</title>
+    <!-- 引入ECharts库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+</head>
+<body>
+    <!-- 准备一个用于展示图表的DOM -->
+    <div id="new3" style="width: 100%; height: 600px;"></div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('new3'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '80與90年代在紅館舉辦演唱會次數都超過五場的歌手',
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['80年代', '90年代'],
+                left: 'center',
+                bottom: 0
+            },
+            xAxis: {
+                type: 'value',
+                name: '演唱会场次'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['陳慧嫻', '林子祥', '羅文', '梅艷芳', '譚詠麟', '溫拿樂隊', '徐小鳳', '許冠傑', '張國榮', '張學友']
+            },
+            series: [
+                {
+                    name: '80年代',
+                    type: 'bar',
+                    data: [8, 54, 6, 43, 105, 12, 73, 17, 78, 15],
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c}',
+                    },
+                    itemStyle: {
+                        color: '#FFA500'  // 橙色
+                    },
+                    barGap: '0%'  // 与90年代的条形图紧贴在一起
+                },
+                {
+                    name: '90年代',
+                    type: 'bar',
+                    data: [12, 47, 13, 87, 43, 30, 61, 51, 46, 71],
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c}',
+                    },
+                    itemStyle: {
+                        color: '#c23531'  // 红色
+                    },
+                    barGap: '0%'  // 与80年代的条形图紧贴在一起
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

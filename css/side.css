@@ -1,0 +1,220 @@
+/* 滚动条 */
+
+.fixed_line {
+    position: fixed; /* 固定定位 */
+    left: 0;         /* 靠左对齐 */
+    top: 0;          /* 靠顶部对齐 */
+    width: 30%;    /* 设置宽度，可以根据需要调整 */
+    height: 100%;    /* 设置高度为视口高度 */
+    overflow-y: auto;   /* 允许内容垂直滚动 */
+
+    /* 隐藏滚动条 */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 90; 
+}
+
+/* 隐藏滚动条 */
+.fixed_line::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* line_content_style1 */
+
+.line_content_style1 {
+    padding: 5px; 
+    margin-top: 10px; 
+
+    border-radius: 10px; 
+    /* box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);  */
+
+    color: brown; 
+    background-color: white;  
+    
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+
+/* 具体设置 */
+
+
+.fixed_line {
+    width: 30%;
+
+    padding-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: white;
+}
+
+.fixed_line {
+    position: fixed;
+    top: 0px; /* 固定到页面顶部 */
+    left: -11%; /* 初始状态在屏幕左边外面 */
+    transition: left 0.5s ease; /* 平滑过渡效果 */
+}
+
+
+ul {
+    width: 50%;
+
+    margin-left: 0;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+ul time {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ul p {
+    margin-bottom: 30px;
+}
+
+/* ul {
+    width: 250px;
+    height: auto;
+
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: brown;
+
+    color: white;
+}
+
+li {
+    width: 250px;
+    height: 360px;
+
+    padding: 10px;
+
+    display: flex;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line_content {
+    width: 90%;
+    height: auto;
+
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: gold;
+}
+
+.line_content p {
+    width: 90%;
+    height: auto;
+
+    margin-top: 0;
+    margin-right: 0;
+
+    font-size: 16px;
+}
+
+time {
+    margin-top: 3.5px;
+
+    font-size: larger;
+    font-weight: 1000;
+} */
+
+
+
+/* .line::before {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    content: "";
+    background-color: brown;
+}
+
+.line::after {
+    border-left: 4px solid brown;
+    content: "";
+    flex-grow: 1;
+} */
+
+
+
+/* 提示框 */
+
+
+.fixed_line .tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: gold;
+    color: brown;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    position: fixed; /* 改为 fixed 以确保位置相对页面固定 */
+    z-index: 102;
+    top: 240px; /* 根据需要调整位置 */
+    left: 20%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fixed_line:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    z-index: 102;
+}
+
+
+/* box */
+
+#box1 {
+    position: fixed;
+    height: 100vh; /* 100% of the viewport height */
+    width: 22%; /* Adjust this based on your content or desired width */
+
+
+    left: -0px; /* 100px from the left side of the screen */
+    top: 0; /* Start from the top of the screen */
+
+    box-shadow: inset -5px 0px 15px 5px rgba(0, 0, 0, 0.3);
+
+    background-color: brown;
+
+    z-index: 20;
+}
+
+
+#box2 {
+    position: fixed;
+    height: 100vh; /* 100% of the viewport height */
+    width: 25%; /* Adjust this based on your content or desired width */
+
+
+    left: -10px; /* 100px from the left side of the screen */
+    top: 0; /* Start from the top of the screen */
+
+    background-color: rgba(165, 42, 42, 0);
+
+    z-index: 100;
+}

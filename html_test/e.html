@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竖向排列圆圈和人名</title>
+    <style>
+        /* 基本样式 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .circle-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .circle {
+            background-color: #8B4513; /* 棕色 */
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        /* 圆圈尺寸 */
+        .circle-12 {
+            width: 24px;
+            height: 24px;
+        }
+
+        .circle-10 {
+            width: 20px;
+            height: 20px;
+        }
+
+        .circle-8 {
+            width: 16px;
+            height: 16px;
+        }
+
+        .circle-7 {
+            width: 14px;
+            height: 14px;
+        }
+
+        .circle-6 {
+            width: 12px;
+            height: 12px;
+        }
+
+        .circle-5 {
+            width: 10px;
+            height: 10px;
+        }
+
+        .circle-4 {
+            width: 8px;
+            height: 8px;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #333;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1; /* 保证文本行高一致 */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-container">
+        <div class="circle-item">
+            <div class="circle circle-12"></div>
+            <div class="label" style="line-height: 24px;">温拿乐队</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-10"></div>
+            <div class="label" style="line-height: 20px;">葉蒨文</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-8"></div>
+            <div class="label" style="line-height: 16px;">陈慧娴</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-7"></div>
+            <div class="label" style="line-height: 14px;">关正杰</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-6"></div>
+            <div class="label" style="line-height: 12px;">罗文</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-5"></div>
+            <div class="label" style="line-height: 10px;">邓丽君</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-4"></div>
+            <div class="label" style="line-height: 8px;">黎小田</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-4"></div>
+            <div class="label" style="line-height: 8px;">Raidas</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-4"></div>
+            <div class="label" style="line-height: 8px;">刘美君</div>
+        </div>
+        <div class="circle-item">
+            <div class="circle circle-4"></div>
+            <div class="label" style="line-height: 8px;">肥妈</div>
+        </div>
+    </div>
+</body>
+</html>

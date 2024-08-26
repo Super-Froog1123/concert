@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Direction Detection</title>
+    <style>
+        body, html {
+            height: 300vh; /* 让页面有足够的高度来滚动 */
+            margin: 0;
+            overflow-y: hidden; /* 禁止默认滚动 */
+        }
+        #status1, #status2 {
+            width: 100%;
+            background-color: #f3f3f3;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="status1">Status 1: Scroll down to jump to Status 2</div>
+
+    <div style="height: 800px;"></div>
+
+    <div id="status2">Status 2: Scroll up to jump back to Status 1, scroll down to unlock scrolling</div>
+
+    <p>aaa</p>
+    <p>aaa</p>
+    <p>aaa</p>
+    <p>aaa</p>
+    <p>aaa</p>
+    <p>aaa</p>
+
+    <script>
+        let atStatus1 = true; // 初始状态位于第一个 status
+        let atStatus2 = false;
+
+        document.addEventListener('wheel', function(event) {
+            const status2 = document.getElementById('status2');
+            const rect2 = status2.getBoundingClientRect();
+
+            if (atStatus1 && event.deltaY > 0) {
+                // 如果在 status1 且用户向下滚动，跳转到 status2
+                window.scrollTo({ top: status2.offsetTop, behavior: 'smooth' });
+                atStatus1 = false;
+                atStatus2 = true;
+            } else if (atStatus2 && event.deltaY < 0 && rect2.top === 0) {
+                // 如果在 status2 且用户向上滚动，跳转回 status1
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                atStatus1 = true;
+                atStatus2 = false;
+                document.body.style.overflowY = 'hidden'; // 重新禁止滚动
+            } else if (atStatus2 && event.deltaY > 0 && rect2.top === 0) {
+                // 如果在 status2 且用户向下滚动，解除滚动禁令
+                document.body.style.overflowY = 'auto';
+            }
+
+            event.preventDefault(); // 阻止默认滚动行为
+        }, { passive: false });
+    </script>
+</body>
+</html>

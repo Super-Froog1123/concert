@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keyword" content="">
+        <meta name="viewport" content="">
+
+        <link rel="stylesheet" type="text/css" href="./css/body.css">
+        <link rel="stylesheet" type="text/css" href="./css/side.css">
+        <link rel="stylesheet" type="text/css" href="./css/hgroup.css">
+        <link rel="stylesheet" type="text/css" href="./css/href.css">
+        <!-- 引入 ECharts 脚本 -->
+        <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+        <!-- 引入外部的 JS 文件 -->
+        <script src="./js/graph.js" defer></script>
+        <!-- <script src="./js/hgroup.js" defer></script> -->
+
+        
+        <title>
+            數說紅館40年，見證港樂半世紀
+        </title>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+
+
+        <hgroup id="status1">
+
+            <div class="hgroup_img1">
+                <img src="./img/hgroup/郭富城2.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img2">
+                <img src="./img/hgroup/张国荣4.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img3">
+                <img src="./img/hgroup/林子祥3.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img4">
+                <img src="./img/hgroup/梅艳芳1.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img5">
+                <img src="./img/hgroup/许冠杰.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img6">
+                <img src="./img/hgroup/刘德华.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img7">
+                <img src="./img/hgroup/张学友.jpg" alt="">
+            </div>
+
+            <div class="hgroup_img8">
+                <img src="./img/hgroup/谭咏麟2.jpg" alt="">
+            </div>
+
+            <div class="hgroup_bk">
+                <img src="./img/hgroup/红馆暗色1.jpg" alt="">
+            </div>
+            
+        </hgroup>
+
+
+        <!-- <script>
+            window.addEventListener('scroll', function() {
+            var startElement = document.querySelector('.start');
+            var fixedLine = document.querySelector('.fixed_line');
+            
+            // 获取 start 元素的顶部位置
+            var startPosition = startElement.getBoundingClientRect().top;
+            
+            // 当 start 元素到达或超过屏幕顶端时，固定内容滑动到距离屏幕左边 80px 的位置
+            if (startPosition <= 0) {
+                fixedLine.style.left = '-180px';
+            } else {
+                fixedLine.style.left = '-1200px'; // 滑回到左边外面
+            }
+            });
+        </script> -->
+
+        
+        <script>
+            document.getElementById('scrollUp').addEventListener('click', function() {
+                var fixedLine = document.querySelector('.fixed_line');
+                fixedLine.scrollTop -= 100; // Adjust the value as needed for the scroll distance
+            });
+
+            document.getElementById('scrollDown').addEventListener('click', function() {
+                var fixedLine = document.querySelector('.fixed_line');
+                fixedLine.scrollTop += 100; // Adjust the value as needed for the scroll distance
+            });
+        </script>
+
+
+        <div class="title2">
+            <h1>
+                數說紅館40年，見證港樂半世紀
+            </h1>
+        </div>
+        
+        <style>
+            .title2 {
+                width: 100%;
+
+                display: inline-block;
+                text-align: center;
+            }
+
+
+            .title2 h1 {
+                width: 50%;
+                height: auto;
+
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-left: 32%;
+                padding: 5px;
+
+                border-radius: 10px;
+                border: 2px solid white; /* 设置5px宽的纯白色边框 */
+
+                background-color: brown;
+
+                color: white;
+
+                font-size: 40px;
+            }
+        </style>
+
+
+
+        <section class="container" style="padding-bottom: 30px;">
+
+            <div id="box1"></div>
+            <!-- <div id="box2"></div> -->
+
+            <div class="fixed_line" id="#md1">
+
+                <div class="tooltip">
+                    <strong>
+                        滑<br>動<br>查<br>看
+                    </strong>
+                </div>
+
+                <ul>
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div>
+                            <p class="line_content_style1" id="md1">
+                                紅館時間軸
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <div id="80s"></div>
+                            <time id="md2">1983年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                4月27日
+                            </h4>
+                            <br>
+                            <p>
+                                時任香港總督尤德爵士主持啟用儀式，並由電視直播過程。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1983年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                5月5 - 7日
+                            </h4>
+                            <br>
+                            <a href="#md10" class="side_link">
+                                <p>
+                                    許冠傑成為第一位在紅館開演唱會的歌手。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1983年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                7月21 - 24日
+                            </h4>
+                            <br>
+                            <a href="#md11" class="side_link">
+                                <p>
+                                    林子祥成為第一位在紅館開四面台的歌手。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1983年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月24 - 25日
+                            </h4>
+                            <br>
+                            <p>
+                                杜麗莎成為第一位位於紅館開演唱會的女歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1983年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月29日 - 1984年1月3日
+                            </h4>
+                            <br>
+                            <p>
+                                鄧麗君成為第一位位於紅館舉行演唱會的台灣歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1984年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月4 - 9日
+                            </h4>
+                            <br>
+                            <a href="#md11" class="side_link">
+                                <p>
+                                    譚詠麟首個紅館演唱會。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1984年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                2月20、22日 - 3月2日
+                            </h4>
+                            <br>
+                            <a href="#md11" class="side_link">
+                                <p>
+                                    徐小鳳首個紅館演唱會。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1985年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                4月2 - 3日
+                            </h4>
+                            <br>
+                            <p>
+                                威猛樂團成為第一隊在紅館開演唱會的外國樂團。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1985年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月2 - 11日
+                            </h4>
+                            <br>
+                            <p>
+                                張國榮首次個人紅館個唱。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1985年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月31日 - 1986年1月14日
+                            </h4>
+                            <br>
+                            <p>
+                                梅艷芳22歲首次個人紅館個唱，80年代在紅館舉行個人演唱會最年輕女歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time id="md4">1987年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月1 - 6日
+                            </h4>
+                            <br>
+                            <p>
+                                張學友首次個人紅館個唱，四大天王中首位踏足紅館開演唱會的歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1989年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月21日 - 1990年1月22日
+                            </h4>
+                            <br>
+                            <a href="#md12" class="side_link">
+                                <p>
+                                    張國榮33場演唱會打破個人演唱會場次紀錄，亦是告別樂壇演唱會。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time id="md3">1992年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                3月17日 - 4月22日
+                            </h4>
+                            <br>
+                            <p>
+                                許冠傑連續舉行41場個人演唱會，刷新紀錄。 
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1992年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                7月9日 - 8月20日
+                            </h4>
+                            <br>
+                            <p>
+                                徐小鳳連續舉行43場個人演唱會，刷新紀錄，徐小鳳至今仍是在紅館開演唱會最多場數的歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1992年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                10月7 - 14日
+                            </h4>
+                            <br>
+                            <p>
+                                黎明成為四大天王中第二個踏足紅館開演唱會的歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1993年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                1月23日－2月1日，2月13－22日
+                            </h4>
+                            <br>
+                            <p>
+                                劉德華成為四大天王中第三個踏足紅館開演唱會的歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1993年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                5月6－9日
+                            </h4>
+                            <br>
+                            <p>
+                                18歲林志穎成為第一位完全以國語歌曲演唱歌手及紅磡開唱最年輕歌手（保持至今）。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1993年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月22－27、30－31日
+                            </h4>
+                            <br>
+                            <p>
+                                李克勤出道首個紅館演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1994年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                10月28日－11月12日
+                            </h4>
+                            <br>
+                            <p>
+                                郭富城成為四大天王中最後一個踏足紅館開演唱會的歌手。
+                            </p>
+                        </div>
+                    </li>
+
+                    <li style="height: 400px;">
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1994年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月22日－1995年1月8日
+                            </h4>
+                            <br>
+                            <a href="#md13" class="side_link" id="md16">
+                                <p>
+                                    王菲首個紅館演唱會，打破了新人演唱會場次最多的記錄和換服裝最少的記錄（4套）。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1996年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                12月12日－1997年1月4日
+                            </h4>
+                            <br>
+                            <p>
+                                張國榮復出樂壇後首座紅館演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1997年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                6月11－13日
+                            </h4>
+                            <br>
+                            <p>
+                                陳慧琳成為首位於半年內兩場個人演唱的歌手；香港主權移交前最後一場演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1997年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月7－12日
+                            </h4>
+                            <br>
+                            <p>
+                                彭羚成為香港主權移交後首位在紅館舉行個唱的歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>1999年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                10月7－10日
+                            </h4>
+                            <br>
+                            <p>
+                                陳奕迅首次個人紅館演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time id="md5">2000年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                11月10－15日
+                            </h4>
+                            <br>
+                            <p>
+                                謝霆鋒成為當時紅館開唱的最年輕香港男歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2001年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                4月11－16日
+                            </h4>
+                            <br>
+                            <p>
+                                張國榮生前最後一場大型演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2001年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                9月25日
+                            </h4>
+                            <br>
+                            <p>
+                                那英成為首位在紅館開演唱會的內地歌手。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2001年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                11月4－5日
+                            </h4>
+                            <br>
+                            <p>
+                                周杰倫出道首個紅館演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2002年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                3月28日－4月6日
+                            </h4>
+                            <br>
+                            <p>
+                                尾場嘉賓張國榮最後一次與阿梅合唱一曲《芳華絕代》。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2003年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                11月6日－11日，14日－15日
+                            </h4>
+                            <br>
+                            <p>
+                                梅艷芳生前最後一次紅館演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2005年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                1月27日－2月1日
+                            </h4>
+                            <br>
+                            <p>
+                                演唱會後Beyond三子正式解散。
+                            </p>
+                        </div>
+                    </li>
+            
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2013年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                3月31日－4月1日
+                            </h4>
+                            <br>
+                            <p>
+                                張國榮逝世10週年紀念音樂會。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2013年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                9月13－17日、19－22日
+                            </h4>
+                            <br>
+                            <p>
+                                周杰倫打破台灣歌手在香港體育館演唱會場次紀錄。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2014年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月30、31日
+                            </h4>
+                            <br>
+                            <p>
+                                為思念2014年3月逝世的香港演唱會之父張耀榮，群星義務性獻唱。
+                            </p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2022年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                7月1日
+                            </h4>
+                            <br>
+                            <p>
+                                慶祝香港回歸祖國二十五週年文藝晚會於香港體育館舉行，劉德華、譚詠麟、謝霆鋒等演出。
+                            </p>
+                        </div>
+                    </li>
+
+                    <li style="height: 700px;">
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2022年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                7月25－28日（原定7月25－31日、8月2－6日）
+                            </h4>
+                            <br>
+                            <a href="#md15" class="side_link" id="md17">
+                                <p>
+                                    MIRROR出道首个紅館演唱会。演唱会于第四場进行期间，舞台其中一幅LED吊幕坠下击中台上多名演出者，事故发生后演出即时腰斩。政府勒令演唱會暫停直至證實舞台安全為止。主办机构随后宣布取消演唱會餘下所有場次，演唱會相關活動亦同時取消。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <!-- <div class="line"></div> -->
+                        <div class="line_content">
+                            <time>2023年</time>
+                            <hr>
+                            <br>
+                            <h4>
+                                8月6－10、12－13日
+                            </h4>
+                            <br>
+                            <p>
+                                溫拿樂團成團50週年告別演唱會。
+                            </p>
+                        </div>
+                    </li>
+            
+                </ul>
+            
+            
+            </div>
+
+
+            <section id="status2" >
+
+                <article class="start" style="margin-top: 0;">
+
+                    <a class="unshow_link" href="#md1">
+                        <div class="title_style">
+                            紅館40週年
+                        </div>
+                    </a>
+
+                    <hr>
+                        
+                    <p>
+                        去年是紅磡香港體育館（紅館）啟用四十週年，
+                        <a class="show_link" href="#md2">於1983年就建成的紅館</a>見證過香港樂壇的黃金時代，被視為香港流行樂最具代表性的演出場地。只要提到香港的演唱會場館，紅館在人們心目中總有一席之位。
+                    </p>
+
+                    <img src="./img/Picture1.jpg" alt="" width="80%" height="auto">
+
+                    <p>
+                        在各類粵語流行歌曲隨著香港電視劇的爆紅傳遍大街小巷的年代，有名氣的歌星們都會來紅館舉辦演唱會。在紅館舉行個人演唱會，曾被視為香港歌手演藝事業的里程碑。
+                    </p>
+
+                    <p>
+                        如今，香港樂壇和香港流行曲的黃金時代已成為人們口中感慨萬千的歷史，隨著越來越多演唱會場館的啟用，紅館的燈光也不如往日明亮。 在即將到來的2025年，香港又一新場館——啟德體育園計畫啟動，將會拉開香港演唱會的新篇章。
+                    </p>
+
+                    <p>
+                        在這樣一個新舊交錯的時刻，讓我們跟隨香港樂壇黃金時代的見證者——紅館，用數據回顧香港樂壇半世紀的潮起潮落。
+                    </p>
+
+                </article>
+
+                <article class="chaoqi">
+
+
+                    <a id="href_two">
+                        <a class="unshow_link" href="#md3">
+                            <div class="title_style">
+                                潮起：80-90年代
+                            </div>
+                        </a>
+                    </a>
+
+                    <hr>
+
+                    <p>
+                        只要談論到粵語流行文化，媒體們總會提到80、90年代的香港。「流行文化一直是香港的軟實力，特別是上世紀八十至九十年代年代，無論是電影電視作品、流行歌曲、廣播電臺都發展蓬勃，冠絕東南亞，堪稱流行文化的黃金時代。」
+                    </p>
+
+                    <img src="./img/new1.jpg" alt="" width="100%" height="auto" style=" margin: 0; padding: 10px; padding-left: 5px;">
+
+                    <p>
+                        香港大學教授、香港文化研究者朱耀偉在《香港流行文化的(後)青春歲月》一書中寫道：「七十年代香港的歌唱比賽參賽者以唱英語歌為主，八十年代幾乎全是粵語歌，時移世易，粵語歌盡領風騷。」
+                    </p>
+
+                    <p>
+                        而紅館，也正是在80年代開始啟用。朱耀偉指出，紅館演唱會在香港流行音樂由聽覺發展到視覺起了關鍵作用。 「紅館有效地推廣了香港的流行音樂產業，更重要的是為香港人提供了一個建立集體回憶的場所。」
+                    </p>
+                    
+                    <img src="./img/cipin.png" alt="" width="100%" height="auto" style=" margin: 0; margin-top: 30px; padding-left: 5px;" id="md10">
+
+                    <p>
+                        80年代初剛剛迎來粵語流行曲的春天，在1983年出現的紅館恰好為80年代紛紛湧出的香港歌星們提供了演唱粵語流行曲的舞臺。 從紅館啟用頭兩個年代的歌星詞頻圖來看，那時在紅館演出的歌星並不算多，但其中開演唱會最為頻繁的幾比特歌星也都是成為近半世紀來香港樂壇代表的人物。
+                    </p>
+
+                    <p>
+                        <strong>
+                            80年代和90年代的歌手數量相對於00年代至20年代偏少（圖一），但舉辦的演唱會總數卻和它們不相上下（圖二），歌手平均舉辦演唱會的場數遠超其他幾個年代（圖三）。
+                        </strong>
+                         在譚詠麟和張國榮「巨星爭霸」的80年代，以及「四大天王」頂起樂壇半邊天的90年代，香港經濟騰飛，娛樂發達，歌迷瘋狂，歌星們經常演唱會一開就是連著十幾二十場。
+                    </p>
+
+                    <div id="P4" style="width: 90%; height: 400px; margin: 0 auto; margin-top: 30px; "></div>
+                    <!-- <img src="./img/Picture4.png" alt="" width="500px" height="auto"> -->
+
+                    <div id="P5" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture5.png" alt="" width="500px" height="auto"> -->
+
+                    <div id="P6" style="width: 90%; height: 400px; margin: 0 auto;  margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture6.png" alt="" width="500px" height="auto"> -->
+
+                    <p id="md11">
+                        在80年代，常常連開十幾二十場演唱會的人氣巨星就包括譚詠麟和張國榮，緊隨其後的就是徐小鳳，林子祥和梅艷芳等人。
+                    </p>
+
+                    <div class="new2_box" style="margin-left: 10%;">
+                        <div class="new2_img">
+                            <style>
+                                .new2_box {
+                                    display: flex;
+                                }
+                                .new2_img {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .new2_img img{
+                                    width: 50px;
+                                    height: 50px;
+
+                                    margin: 0;
+                                    padding: 0;
+
+                                    margin-bottom: 32px;
+
+                                    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+                                    filter: brightness(100%);  /* 初始亮度 */
+                                }
+
+                                .new2_img img:hover {
+                                    filter: brightness(150%);  /* 变亮 */
+                                }
+                            </style>
+                            <img src="./img/starts/张学友.png" alt="" style="margin-top: 110px;">
+                            <img src="./img/starts/张国荣.png" alt="">
+                            <img src="./img/starts/许冠杰.png" alt="">
+                            <img src="./img/starts/徐小凤.png" alt="">
+                            <img src="./img/starts/梅艳芳.png" alt="">
+                            <img src="./img/starts/甄妮.png" alt="">
+                            <img src="./img/starts/陈百强.png" alt="">
+                            <img src="./img/starts/许冠杰.png" alt="">
+                            <img src="./img/starts/张学友.png" alt="">
+                            <img src="./img/starts/吕方.png" alt="">
+                        </div>
+                        <div id="new2" style="width: 90%; height: 1000px; margin: 0 auto;  margin-top: 30px; "></div>
+                        <div class="new2_img">
+                            <style>
+                                .new2_box {
+                                    display: flex;
+                                }
+                                .new2_img {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .new2_img img{
+                                    width: 50px;
+                                    height: 50px;
+
+                                    margin: 0;
+                                    padding: 0;
+
+                                    margin-bottom: 32px;
+
+                                    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+                                    filter: brightness(100%);  /* 初始亮度 */
+                                }
+
+                                .new2_img img:hover {
+                                    filter: brightness(150%);  /* 变亮 */
+                                }
+                            </style>
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/12.png" alt="" style="margin-top: 110px;">
+                                <p style="width: 100px; font-size: 15px; margin-top: 120px; margin-left: 10px;">12&nbsp;温拿乐队</p>
+                            </div>
+                            
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/10.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    10&nbsp;葉蒨文
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/8.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    8&nbsp;陈慧娴
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/7.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    7&nbsp;关正杰
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/6.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    6&nbsp;罗文
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/6.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    6&nbsp;邓丽君
+                                </p>
+                            </div>
+                           
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/5.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    5&nbsp;黎小田
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/4.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    4&nbsp;Raidas
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/4.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    4&nbsp;刘美君
+                                </p>
+                            </div>
+
+                            <div style=" margin: 0; padding: 0; display: flex;">
+                                <img src="./img/starts/4.png" alt="">
+                                <p style="margin-top: 10px; font-size: 15px; margin-left: 10px;">
+                                    4&nbsp;肥妈
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    <!-- <img src="./img/Picture7.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        譚詠麟在80年代初推出的專輯及歌曲如《愛的根源》和《霧之戀》等，不僅橫掃各大頒獎典禮，還創下了驚人的銷量。當時，譚詠麟在紅館連續開的演唱會次數也打破了紅館當時的香港歌手初次登台個人演唱會的歷史記錄。據說，譚詠麟「校長」名號的由來就是因為當時人人都會唱他的歌，而且他的演唱會不僅每場都爆滿，歌迷們還會進行激昂大合唱，如同學校開大會和眾人唱校歌。
+                    </p>
+
+                    <p>
+                        譚詠麟爆火的同一時期，張國榮在1984年憑藉一首《Monica》在香港流行樂壇一夜爆火，甚至打破了當時譚詠麟在紅館連續開演唱會的記錄，二人熱度不相上下。
+                    </p>
+
+                    <div style="display: flex; flex-direction: row; position: relative; right: 25%;">
+                        <img src="./img/谭咏麟演唱会.jpg" alt="" width="60%" height="auto">
+
+                        <img src="./img/张国荣演唱会.png" alt="" width="60%" height="auto">
+                    </div>
+
+
+                    <div style="display: flex; flex-direction: row; position: relative; right: 0%;">
+                        <p style="margin-top: 0px; width: 90%">
+                            譚詠麟紅館演出照片
+                        </p>
+    
+                        
+                        <p style=" margin-left: 35%; margin-top: 0px;  width: 90%;">
+                            張國榮紅館演出照片
+                        </p>
+                    </div>
+                    
+
+                    <p>
+                        可由於「巨星爭霸」帶來的輿論壓力和粉絲之間的惡性競爭，80年代末，譚詠麟宣布不再參與任何有競爭性質的獎項評選，張國榮則將話筒留在舞台上從此封麥。
+                    </p>
+
+                    <p id="md12">
+                        1989年，伴隨著「但願用熱烈掌聲歡送我」的深情剖白，33歲的張國榮在香港紅磡體育館舉辦了33場告別樂壇演唱會，當初憑藉一首《風繼續吹》在樂壇嶄露頭角的他，選擇以《風再起時》為歌手生涯畫下句點。
+                    </p>
+
+                    <p>
+                        就此，「巨星爭霸」的局面結束，為香港樂壇帶來了重創的同時，也導致了紅館的演唱會場次的下降。 1990年，也就是爭霸結束的第一年，紅館的演唱會相對於前一年，有了大幅度的下降，僅達到了1989年場次的一半。同時，許多80年代的歌手也逐漸退出樂壇。
+                    </p>
+
+                </article>
+
+                <article class="chaoqi2">
+
+                    <a class="unshow_link" href="#md4">
+                        <div class="title_style">
+                            「四大天王」時代
+                        </div>
+                    </a>
+                   
+                    <hr>
+
+                    <p>
+                        <a href="#md3" class="show_link">
+                            在1992年，這個低迷的趨勢便有了一個極大的逆轉。這是一個新舊交替的年份，在這一年，紅館演唱會再次突破了100場的大關，達到了124場，無論是場次還是熱度又達到了一個新的高峰。 90年代也就此成為了香港樂壇的黃金時代。
+                        </a>
+
+                        其中很重要的原因，便是許多新興歌手的橫空出世。而其中，最出名的莫過於「四大天王」。所謂「四大天王」，指的是香港在20世紀90年代最火的四位男歌星，分別是張學友、劉德華、郭富城、黎明。
+                    </p>
+
+                    <img src="./img/四大天王.png" alt="" width="80%" height="auto">
+
+                    <p style="margin-left: 250px; margin-top: 0;">
+                        「四大天王」
+                    </p>
+
+                    <p>
+                        在「四大天王」的稱號出現之前，四人也並非特別出名。在其他巨星的光芒下，舞台還沒有為他們留出位置。直到歌壇時代更替，四人才更多地出現在了大眾的視野中。 1990年，黎明推出的首張專輯《相逢在雨中》讓他幾乎囊括了當年香港樂壇的所有新人獎。同年，郭富城在拍攝一個摩托車廣告、一個巧克力廣告成名後，專輯《對你愛不完》在亞洲銷售量突破100萬張。第二年，張學友以一首《每天愛你多一點》在電台金曲排行榜上雄霸32週，拿下20個週冠。仍然是1991年，劉德華的《愛不完》和《一起走過的日子》大賣五十多萬張。就這樣，原本默默無聞的四個人，在自身作品的支持以及TVB、寶麗金、華星等公司的合力打造下，成為了公認的「四大天王」，站在了香港樂壇的中心，並雄霸長達十年之久。
+                    </p>
+
+
+                    <div class="liming-guofucheng">
+                        <div>
+                            <img src="./img/黎明.png" alt="" width="90%" height="260px">
+    
+                            <p style="margin-left: 25%; margin-top: 0; font-size: 15px;">
+                                黎明專輯《相逢在雨中》封面
+                            </p>
+                        </div>
+                        
+    
+                        <div>
+                            <img src="./img/郭富城.png" alt="" width="90%" height="260px">
+    
+                            <p style="margin-left: 30%; margin-top: 0; font-size: 15px;">
+                                郭富城摩托車廣告
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="zhangxueyou-liudehua">
+                        <div>
+                            <img src="./img/张学友.png" alt="" width="90%" height="260px">
+    
+                            <p style="margin-left: 25%; margin-top: 0; font-size: 15px;">
+                                張學友專輯《情不禁》封面
+                            </p>
+                        </div>
+    
+                        <div>
+                            <img src="./img/刘德华.png" alt="" width="90%" height="260px">
+    
+                            <p style="margin-left: 30%; margin-top: 0; font-size: 15px;">
+                                劉德華《愛不完》封面
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <style>
+                        .liming-guofucheng {
+                            width: 90%;
+                            display: flex;
+                        }
+
+                        .zhangxueyou-liudehua {
+                            width: 90%;
+                            display: flex;
+                        }
+                    </style>
+                    
+                    
+
+                    <p>
+                        這十年間，「四大天王」創造的輝煌，至今仍會令人震撼。作品與成就方面，1991年的叱吒樂團頒獎禮，男歌手的金、銀、銅獎被張學友、劉德華、黎明拿下，郭富城拿下生力軍男歌手銀獎。第二年的十大金曲，四人總共佔了7首。到了1993年的十大金曲，8首都是他們的作品。粉絲方面，因為他們，第一批真正意義上的追星族誕生了。各式各樣的明星周邊產品開始誕生，四人的穿著、髮型等也都被無數人模仿著。
+                    </p>
+
+                    <p>
+                        四人的崛起毫無疑問也為紅館帶來了希望。在整個90年代中，「四大天王」舉辦的演唱會場次達到了315場，佔據了全部場次的30%以上，為紅館吸引了一大波觀眾，也帶來了更多的流量。
+                    </p>
+
+
+                    <div id="P15" style="width: 90%; height: 300px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture15.png" alt="" width="500px" height="auto"> -->
+                    
+                    <p>
+                        對比整個90年代各歌手在紅館開演唱會的場次，「四大天王」也是毫無疑問地佔據了前面的位置，分別為第一、三、四、五名。其中開演唱會最多的是黎明，達到了驚人的101場。而居於第二位的，是80年代便已開始在紅館開演唱會的老牌歌手梅艷芳。
+                    </p>
+
+                    <div id="P16" style="width: 90%; height: 600px; margin: 0 auto; margin-top: 30px; "></div>
+                    <!-- <img src="./img/Picture16.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        <strong>
+                            在這個時期，雖然四大天王和梅艷芳在場次數名列前茅，但是歌手之間的差距已沒有80年代那麼明顯。可以說，90年代是個粵語歌群星閃耀的時代。 
+                        </strong>
+                    </p>
+
+                    <div class="new3_content" style="margin-left: 80px;">
+                        <div class="new3_img">
+                            <img src="./img/starts/谭咏麟.png" alt="" style="margin-top: 145px;">
+                            <img src="./img/starts/徐小凤.png" alt="">
+                            <img src="./img/starts/梅艳芳.png" alt="">
+                            <img src="./img/starts/张国荣.png" alt="">
+                            <img src="./img/starts/林子祥.png" alt="">
+                            <img src="./img/starts/张学友.png" alt="">
+                            <img src="./img/starts/许冠杰.png" alt="">
+                            <img src="./img/starts/温拿乐队.png" alt="">
+                            <img src="./img/starts/陈慧娴.png" alt="">   
+                            <img src="./img/starts/罗文.png" alt="">
+                        </div>
+                        <div id="new3" style="width: 500px; height: 640px; margin-top: 30px; margin-left: 60px;"></div>
+                        <!-- <img src="./img/new3.png" alt="" width="500px" height="auto"> -->
+                    </div>
+
+                    <style>
+                        .new3_contnet {
+                            display: flex;
+                            flex-direction: row;
+                        }
+
+                        .new3_img {
+                            width: 50px;
+                            height: 50px;
+
+                            margin: 0;
+                            padding: 0;
+
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .new3_img img {
+                            width: 40px;
+                            height: 40px;
+
+                            margin: 0;
+                            padding: 0;
+
+                            margin-bottom: 12px;
+
+                            transition: all 0.3s ease; /* 添加平滑过渡效果 */
+                            filter: brightness(100%);  /* 初始亮度 */
+                        }
+
+                        .new3_img img:hover {
+                            filter: brightness(150%);  /* 变亮 */
+                        }
+                    </style>
+
+                    <p>
+                        同時不可忽視的是，90年代在紅館開演唱會的幾位主要歌手，與80年代的歌手存在著一定的重合度。除去前文提到的梅艷芳，還有徐小鳳、許冠傑、林子祥等著名歌手，在這兩個時段都榜上有名。
+                    </p>
+
+                    <p>
+                        可惜，這樣大好的局面及趨勢在紅館並沒有持續太久。從1997年開始，受到樂壇的影響，紅館演唱會場數又產生了大幅度的下滑，且之後幾年即便仍有些微的上升，卻再也沒有回到曾經巔峰時期的水平。
+                    </p>
+
+                </article> 
+
+                <article class="chaoluo">
+
+                    <a class="unshow_link" href="#md5">
+                        <div class="title_style">
+                            潮落：00年代至今
+                        </div>
+                    </a>
+
+                    <hr>
+
+                    <p>
+                        <strong>
+                            自2000年代以来，香港紅館有更多的歌手在紅館登台，歌手的地區，文化變得更多元，紅館的舞台不再只屬於粵語流行樂。
+                        </strong>
+                    </p>
+
+                    <p>
+                        <strong>
+                            在2000年代，有30場以上演唱会的歌手共有21名，但是其中本港的新興歌手不多，只有六位，大部分活躍在紅館舞台的仍是90年代或之前就已成名的歌手。
+                        </strong>
+                        同时，周杰伦、五月天、等台灣歌手与组合也進入榜單前列，國語流行樂開始成為紅館舞台上難以忽視的文化潮流之一。
+                    </p>
+
+                    <div id="P17" style="width: 90%; height: 550px; margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture17.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        首先，四大天王時期的壟斷地位使得香港樂壇的後繼力量乏力。四大天王以其強大的號召力和市場影響力，幾乎壟斷了整個90年代的香港樂壇。這種壟斷導致了新生代歌手難以獲得足夠的曝光和資源，無法迅速崛起來接替前輩們的位置。
+                    </p>
+
+                    <p>
+                        台灣創作歌手王傑評價四大天王時認為，這個頭銜抹殺了其他值得尊敬的音樂人或歌手。 1993年，黃家駒於音樂會後說：「香港沒有樂壇。」意在批評當時香港娛樂圈立四大天王並造勢的舉動過於重視歌手人氣，而忽視了樂壇形式的發展，令香港樂壇沒有一個真正獨立自主的發展空間。黎明於1996年接受採訪時主張取消「四大天王」稱號時，也認為「四大天王」只是電視台的宣傳手法，此舉既會妨礙新人冒升，也會對四人帶來不必要的壓力。
+                    </p>
+
+                    <p>
+                        其次，盜版唱片的氾濫嚴重擾亂了唱片市場。盜版問題不僅使得唱片公司和歌手的收入銳減，也打擊了整個音樂產業的積極性和創造力。在這樣一個環境下，許多新生代歌手難以透過傳統的唱片銷售獲得成功，從而影響了他們在演唱會市場上的表現。
+                    </p>
+
+                    <p>
+                        最後，香港以外其他地區樂壇力量的興起，也分流了許多樂迷的關注與資源。特別是台灣地區，隨著華語流行音樂的崛起和推廣，吸引了大量的聽眾和市場份額。台灣樂壇的興起不僅在音樂風格上帶來了新的潮流，也在演唱會市場上分走了紅館原本的觀眾。
+                    </p>
+
+                    <div id="P18" style="width: 90%; height: 300px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture18.png" alt="" width="500px" height="auto"> -->
+
+                    <div id="P19" style="width: 90%; height: 300px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture19.png" alt="" width="500px" height="auto"> -->
+
+
+                    <p>
+                        00年代後，紅館的演唱會平均每場次的主題場次明顯少於00年代前，這反映了樂壇歌手號召力與影響力的下降以及對市場估值的降低。與此形成鮮明對比的是，00年後紅館演唱會中台灣歌手的佔比遠大於00年前，顯示出台灣樂壇在新世紀逐漸崛起的趨勢。
+                    </p>
+
+                    <p>
+                        聚焦各年代舉辦演唱會的歌手首次登台紅館的時代，同樣可以發現00年後的熱門歌手並不具備如前輩般對於香港樂壇的統治力。
+                    </p>
+
+                    <p>
+                        下圖所示，在80，90年代首次登台的歌星，在21世紀的前十餘年仍然舞台的主力，尤其是2020年之後，仍有過半是20世紀出道。 
+                    </p>
+
+                    <p style="margin-left: 180px;">
+                        <strong>
+                            各時代的歌手流向來源圖（首次登台紅館）
+                        </strong>
+                    </p>
+
+                    <img src="./img/桑基图2.jpg" alt="" width="100%" height="auto" style="margin: 0; padding: 0; margin-top: 20px;">
+
+                    <a href="./名单.pdf" target="_blank" class="pdf_link">
+                        <div style="margin-top: 30px; margin-left: 20%; font-size: 40px; color: brown; font-weight: bold;">
+                            <p>
+                                Link：各年代紅館舉辦演唱會主題場次數TOP3
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- <p>
+                        由流向來源圖所示，從00年代開演唱會的歌手多是90年代，80年代的首次登台的歌手，00年「的新面孔」僅約佔三分之一。 10年代歌手首次登場的新歌手僅佔約四分之一。20年代新面孔則更少。數據說明新生代登台紅館的歌手難以挑戰老歌手的地位。
+                    </p> -->
+
+                    <p style="margin-left: 30%;">
+                        <strong>
+                            各時代主題演唱會平均場次
+                        </strong>
+                    </p>
+                    
+                    <div id="P21" style="width: 90%; height: 450px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture21.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        00年代和20年代舉辦演唱會場次最多的反而是90年代首次登台的歌手，而10年代舉辦最多的則是00年代的歌手。這表明，儘管新生代歌手不斷湧現，但他們始終無法超越前輩歌手贏得更多的市場份額。這與90年代時新生歌手迅速崛起並與80年代歌手平分秋色的現象截然不同。
+                    </p>
+
+                    <img src="./img/new4.png" alt="" style="width: 130%; margin: 0 auto; margin-top: 30px; position: relative; left: -10%;">
+
+                    <div id="P22" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture22.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        紅館啟用41年來，舉辦演唱會數量最多的前十名歌星均來自80和90年代。
+                    </p>
+
+                    <p>
+                        對比紅館五個年代的舉辦演唱會數量最多的歌星，00至20年代分別在紅館唱得最多的歌手舉辦演唱會的場數都不及80和90年代的歌星，且在10年代，舉辦演唱會場數最多的領頭歌星仍是80年代的領頭歌星譚詠麟。而且，譚詠麟在10年代的演唱會舉辦場數也無法超越80年代流行樂壇巔峰時期的自己。
+                    </p>
+
+                    <p>
+                        從歌手們舉辦的各主題演唱會來看，紅館40年來各主題演唱會舉辦場次較多的歌手大部分也都來自80年代和90年代。
+                    </p>
+
+                    <div id="P23" style="width: 90%; height: 500px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture23.png" alt="" width="500px" height="auto"> -->
+
+                    <div id="P24" style="width: 90%; height: 500px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture24.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        從五個年代的歌手年齡分佈情況來看，在紅館演出的歌手呈現了老齡化的趨勢，60歲以上的歌手佔比從80年代的0%上升到瞭如今的34.58%，而相對的，0 -30歲的歌手佔比則每個年代都有所下降。這些數據都共同反映近年來在紅館演出的歌手具有重複，分散，老化的問題。
+                    </p>
+
+
+                    <p style="margin-left: 30%;">
+                        <strong>
+                            各年代各年齡層歌手佔比
+                        </strong>
+                    </p>
+
+
+
+                    <div id="P25" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture25.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture26.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture27.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture28.png" alt="" width="500px" height="auto"> -->
+
+                    <!-- <img src="./img/Picture29.png" alt="" width="500px" height="auto"> -->
+
+                    <div id="P30" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture30.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        不過，值得我們關注的是紅館演出的女歌手人數增加。從80年代到10年代，在紅館舉辦演唱會的女歌手數量有了明顯的提升，從最開始的11人到了10年代的62人。
+                    </p>
+                    
+                    <div id="P31" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture31.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        同時，每個年代在紅館開演唱會的女歌手的比例隨著時間的變化也有了大幅的增加。 80年代時，香港樂壇基本上是男歌手的天下，紅館開演唱會的女歌手只佔了36%。到了90年代，女歌手的比例就有了一定程度的增加，達到了接近40%。如今，女歌手的比例已逐步接近45%，這也是樂壇歌手風格日漸多元化的一方面體現。
+                    </p>
+
+
+                    <div id="P32" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+
+                    <!-- <img src="./img/Picture32.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture33.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture34.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture35.png" alt="" width="500px" height="auto">
+
+                    <img src="./img/Picture36.png" alt="" width="500px" height="auto"> -->
+
+                    <p id="md13">
+                        從90年代開始，越來越多的女歌手開始逐步崛起。
+                        <a href="#md16" class="show_link">王菲、鄭秀文等女歌手，以獨特的風格、突出的實力等，在90年代殺出了屬於她們的歌手之路。</a> 1992年的十大金曲，除了「四大天王」包辦的7首外，都為女歌手的作品。
+                    </p>
+
+                    <img src="./img/Picture37.png" alt="" width="80%" height="auto" style="margin: 0 auto; margin-top: 30px; margin-left: 10%;">
+
+                    <p>
+                        其中，王菲是非常具代表性的。 1989年，王菲以粵語歌《仍是舊句》正式邁入樂壇。此後，她透過美聲、顫音、拖音、假聲、氣聲等演唱技巧，並在音樂中融合英倫搖滾等不同於主流流行音樂的風格，闖出了自己的一番天地，成為多地「最受歡迎女歌手」之一。 1993年，她的《執迷不悔》強勢拿下十大金曲一席。也正是越來越多像她這般優秀的女歌手的逐漸湧現，才有了後來男女歌手共同活躍在樂壇的百花齊放的局面。
+                    </p>
+
+                    <p id="md15">
+                        雖然在紅館演出的歌手在地區和性別上日漸呈現出多元化的趨勢，但紅館的安全問題日益成為公眾和歌手們的擔憂。郭富城曾因升降台鋼絲斷裂而跌落，所幸無傷。填詞人林敏銖的作品展演唱會彩排時，油壓台突然墜下，導致多名工作人員與草蜢組合成員蔡一智受傷。<a href="#md17" class="show_link">而最近一次，在2022年的MIRROR演唱會上，大螢幕墜落，導致兩名舞蹈工作者重傷，演唱會因此暫停並取消。這些意外使得部分歌手另尋他處舉辦演唱會，以確保安全。</a>
+                    </p>
+
+                    <div id="P38" style="width: 90%; height: 300px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture38.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        與此同時，00至10年代中新場館的建立，如亞洲博覽館、九龍灣會展中心和中環海濱廣場等，分走了紅館原本的市場份額。 到2023年，曾經獨佔鰲頭的紅館只能佔據將近2/5的演唱會數目，顯示出其市場地位的顯著下降。
+                    </p>
+
+                   
+                    <div id="P39" style="width: 90%; height: 400px;  margin: 0 auto; margin-top: 30px;"></div>
+                    <!-- <img src="./img/Picture39.png" alt="" width="500px" height="auto"> -->
+
+                    <p>
+                        在國際上，大牌歌手們更傾向於在體育場舉行演唱會。一方面，體育場允許更多粉絲入場感受演唱會的氛圍，另一方面，歌手也能獲得粉絲更熱情的回饋。體育場的容量往往超過50,000人次，而紅館等香港演唱會場館的容量則多在10,000人左右。儘管這些場館小而精緻，但無法滿足大牌歌手對大規模場地的需求，因此，對海外歌手的吸引力相當有限。
+                    </p>
+                </article>
+
+                <article>
+
+                    <div class="title_style">
+                        結語
+                    </div>
+
+                    <hr>
+
+                    <p>
+                        綜上所述，紅館與香港樂壇在00年代後的衰退是多重因素共同作用的結果。從市場環境變化到新場館的崛起，再到安全問題的困擾，紅館和香港樂壇都面臨前所未有的挑戰。然而，作為香港樂壇的重要像徵，紅館的過去輝煌依然值得銘記與敬仰。未來，它能否再度煥發光彩，還需依賴整個樂壇的共同努力與創新。
+                    </p>
+                    
+
+                </article>
+
+                <article>
+
+                    <div class="title_style">
+                        數據與資料來源
+                    </div>
+
+                    <hr>
+
+                    <ul style="width: 100%; margin: 0;">
+
+                        <style>
+                            article ul li .show_link  {
+                                font-size: 16px;
+                            }
+                        </style>
+
+                        <li style="margin-top: 20px;   margin-bottom: 20px;">
+                            <a class="show_link" href="http://cul.china.com.cn/2022-09/08/content_42100543.htm">
+                                香港流行音樂50年：從崛起到交融。
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link" href="https://www.wenweipo.com/a/202305/12/AP645d4b92e4b0f46e55d1a519.html">
+                                【「香港流行文化黃金時代的見證者」系列】廿年醞釀出粵語流行音樂盛世 金曲之父張文新：流行文化無分新舊 最緊要受。
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link" href="http://www.cnctrip.com/blog/html/74/n-174.html">
+                                920世紀香港樂壇的80-90年代。
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link" href="https://imgur.com/mCKpxH9">
+                                黎明宣稱主張主動取消「四大天王」頭銜。
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link" href="https://zh.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E9%AB%94%E8%82%B2%E9%A4%A8%E6%AD%B7%E5%B9%B4%E6%BC%94%E5%87%BA%E7%B4%80%E9%8C%84%E5%88%97%E8%A1%A8">
+                                數據來源：維基百科香港體育館歷年演出紀錄列表
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link">
+                                明星個人資料（出生年份/年齡，出要發展地）：互聯網
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom: 20px;">
+                            <a class="show_link">
+                                場館啟用年份，容量資料：互聯網
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </article>
+
+            </section>
+
+
+            <style>
+                /* 固定在右下角的按钮样式 */
+                .scroll-to-top {
+                    position: fixed;
+                    bottom: 25px;
+                    left: 16%;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url('./img/up_button.png');
+                    background-size: cover;
+                    cursor: pointer;
+                    transition: opacity 0.3s;
+                    opacity: 0.7;  /* 半透明效果 */
+
+                    z-index: 90;
+                }
+            
+                /* 悬停时使按钮变亮 */
+                .scroll-to-top:hover {
+                    opacity: 1;  /* 不透明 */
+                }
+            </style>
+            
+            <!-- 滚动到顶部按钮 -->
+            <div class="scroll-to-top" onclick="scrollToMd1()"></div>
+            
+            <script>
+                // JavaScript 实现点击按钮时滚动到 id="md1"
+                function scrollToMd1() {
+                    const md1Element = document.getElementById('md1');
+                    if (md1Element) {
+                        md1Element.scrollIntoView({
+                            behavior: 'smooth',  // 平滑滚动
+                            block: 'start'       // 滚动到元素顶部
+                        });
+                    }
+                }
+            </script>
+            
+            
+
+            <style>
+                /* 固定在右下角的按钮样式 */
+                .scroll-to-top2 {
+                    position: fixed;
+                    bottom: 25px;
+                    right: 3%;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url('./img/up_button.png');
+                    background-size: cover;
+                    cursor: pointer;
+                    transition: opacity 0.3s;
+                    opacity: 0.7;  /* 半透明效果 */
+                }
+        
+                /* 悬停时使按钮变亮 */
+                .scroll-to-top2:hover {
+                    opacity: 1;  /* 不透明 */
+                }
+            </style>
+
+            <!-- 滚动到顶部按钮 -->
+            <div class="scroll-to-top2" onclick="scrollToTop()"></div>
+
+            <script>
+                // JavaScript 实现点击按钮时滚动到页面顶部
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'  // 平滑滚动
+                    });
+                }
+            </script>
+        
+        </section>
+
+        <footer>
+            <hr>
+
+            <br>
+            <br>
+            
+            <p>
+                图文/网页｜陈周怡，郝雨时，刘懿华，梁育萱，李奕君
+            </p>
+
+            <p>
+                指导老师｜王悦，傅晓艺
+            </p>
+        </footer>
+    </body>
+</html>

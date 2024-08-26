@@ -1,0 +1,79 @@
+/* 隐藏超链接 */
+
+a {
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.unshow_link:hover {
+    text-decoration: underline; /* 添加下划线 */
+    text-decoration-color: brown; /* 初始下划线颜色为蓝色 */
+    text-decoration-style: dashed; /* 初始下划线样式为虚线 */
+    text-decoration-thickness: 1.5px; /* 初始下划线厚度 */
+    text-underline-offset: 5px; /* 下划线距离文字5px */
+    color: inherit; /* 让文本颜色继承，保持下划线颜色的独立 */
+}
+
+.unshow_link:active {
+    text-decoration-color: orange; /* 点击时下划线颜色变为红色 */
+    text-decoration-style: dashed; /* 下划线样式仍然为虚线 */
+}
+
+
+/* 不隐藏超链接 id="show_link" */
+
+.show_link {
+    text-decoration: none;
+    text-decoration: underline; /* 添加下划线 */
+    text-decoration-color: brown; /* 初始下划线颜色为蓝色 */
+    text-decoration-style: dashed; /* 初始下划线样式为虚线 */
+    text-decoration-thickness: 1.5px; /* 初始下划线厚度 */
+    text-underline-offset: 5px; /* 下划线距离文字5px */
+    color: inherit; /* 让文本颜色继承，保持下划线颜色的独立 */
+}
+
+.show_link:active {
+    text-decoration-color: orange; /* 点击时下划线颜色变为红色 */
+    text-decoration-style: dashed; /* 下划线样式仍然为虚线 */
+}
+
+
+
+/* side_link */
+
+
+.side_link {
+    text-decoration: none;
+    text-decoration: underline; /* 添加下划线 */
+    text-decoration-color: white; /* 初始下划线颜色为蓝色 */
+    text-decoration-style: dashed; /* 初始下划线样式为虚线 */
+    text-decoration-thickness: 1.5px; /* 初始下划线厚度 */
+    text-underline-offset: 5px; /* 下划线距离文字5px */
+    color: inherit; /* 让文本颜色继承，保持下划线颜色的独立 */
+}
+
+.side_link:active {
+    text-decoration-color: gold; /* 点击时下划线颜色变为红色 */
+    text-decoration-style: dashed; /* 下划线样式仍然为虚线 */
+}
+
+
+
+/* pdf_link */
+
+.pdf_link {
+    text-decoration: none;
+    text-decoration: underline; /* 添加下划线 */
+    text-decoration-color: brown; /* 初始下划线颜色为蓝色 */
+    text-decoration-style: dashed; /* 初始下划线样式为虚线 */
+    text-decoration-thickness: 1.5px; /* 初始下划线厚度 */
+    text-underline-offset: 5px; /* 下划线距离文字5px */
+    color: inherit; /* 让文本颜色继承，保持下划线颜色的独立 */
+}
+
+.pdf_link:active {
+    text-decoration-color: orange; /* 点击时下划线颜色变为红色 */
+    text-decoration-style: dashed; /* 下划线样式仍然为虚线 */
+}
